@@ -1,9 +1,9 @@
 const LinksSocialMedia = {
   github: 'rfsasse',
-  youtube: 'ruansasseyou',
-  facebook: 'ruansasseface',
-  instagram: 'ruansasseinst',
-  twitter: 'ruansassetwit'
+  youtube: 'ruansasse',
+  facebook: 'ruan.sasse',
+  instagram: 'sasseruan',
+  twitter: 'ruansasse'
 }
 
 function changeSocialMediaLinks() {
@@ -51,7 +51,7 @@ function getGitHubProfileInfos() {
     .then(data => {
       //userName é o id do elemento da dom  .textContent função que altera o texto da dom = recebe a variae
       userName.textContent = data.name
-      userBio.textContent = data.bio 
+      userBio.textContent = data.bio
       userLink.href = data.html_url
       userFoto.src = data.avatar_url
       userLogin.textContent = data.login
