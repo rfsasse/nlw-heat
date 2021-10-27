@@ -5,7 +5,9 @@
 html,
 body {
   --grey: hsl(240, 9%, 89%);
-  --black: hsl(240, 9%, 13%)
+  --black: hsl(240, 9%, 13%);
+  --gray-background: hsla(190, 3%, 38%, 0.514);
+  --gray-border: hsl(0, 1%, 34%);
 
   height: 100%;
   font-family: 'Roboto', sans-serif;
@@ -41,7 +43,7 @@ main {
 }
 
 .avatar span {
-  position: absolute;  /*subir nivel do elemento novas propriedades*/
+  position: absolute; /*subir nivel do elemento novas propriedades*/
   top: -15px;
   z-index: 1; /*seta o nivel precisa ter o absolute*/
 }
@@ -69,15 +71,11 @@ a {
 
   justify-content: center;
   align-items: center;
-  
 }
-
 
 p {
   margin-top: 2rem;
 }
-
-
 
 ul {
   margin-top: 4rem;
@@ -87,4 +85,18 @@ ul {
   gap: 0.8rem; /*espaço entre eles*/
 
   justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  body {
+    background: var(--gray-background);
+  }
+  main {
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 21.8rem;
+    min-height: 43.75rem;
+    height: 50rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    border: 2px solid var(--gray-border);
+  }
 }
