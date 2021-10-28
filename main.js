@@ -3,7 +3,7 @@ const LinksSocialMedia = {
   youtube: 'ruansasse',
   facebook: 'ruan.sasse',
   instagram: 'sasseruan',
-  twitter: 'ruansasse'
+  linkedin: 'in/ruan-felipe-sasse-147429180'
 }
 
 function changeSocialMediaLinks() {
